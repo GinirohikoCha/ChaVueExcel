@@ -1,12 +1,21 @@
 {
   "name": "cha-vue-excel",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "description": "a lite vue component for importing excel",
+  "author": {
+    "name": "GinirohikoCha",
+    "email": "rinkouatf@qq.com",
+    "url": "https://github.com/GinirohikoCha"
+  },
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-import-excel": "vue-cli-service build --target lib --name cha-vue-excel src/components/index.js"
   },
+  "main": "dist/cha-vue-excel.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "element-plus": "^1.0.2-beta.28",
@@ -33,6 +42,14 @@
     "stylus-loader": "^3.0.2",
     "vue-cli-plugin-element-plus": "~0.0.13"
   },
+  "keywords": [
+    "ginirohikocha",
+    "xlsx",
+    "excel",
+    "import",
+    "vue3.0",
+    "导入Excel"
+  ],
   "eslintConfig": {
     "root": true,
     "env": {
@@ -51,5 +68,13 @@
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+  "files": [
+    "dist/cha-vue-excel.common.js",
+    "dist/cha-vue-excel.umd.js",
+    "dist/cha-vue-excel.umd.min.js",
+    "dist/cha-vue-excel.css",
+    "dist/fonts/element-icons.abe71f7d.ttf",
+    "dist/fonts/element-icons.d9491be2.woff"
   ]
 }
